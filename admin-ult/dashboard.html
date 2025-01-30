@@ -20,7 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Dashboard - Tamu</title>
+    <title>Dashboard - Admin ULT</title>
   </head>
   <body class="no-background">
     <!-- Navbar -->
@@ -48,12 +48,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/user/buat-permohonan.html"
-                >Buat Permohonan</a
+              <a class="nav-link" href="/admin-ult/buat-permohonan.html"
+                >Print Laporan</a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
             </li>
           </ul>
           <ul class="navbar-nav">
@@ -89,25 +86,31 @@
           <thead>
             <tr>
               <th>No</th>
-              <th>Jenis Pengajuan</th>
+              <th>Nama</th>
+              <th>Jenis Permohonan</th>
               <th>Tgl Buat</th>
-              <th>Tgl Pengajuan</th>
               <th>Status</th>
+              <!-- New column -->
               <th>Aksi</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
+              <td>John Doe</td>
               <td>Perubahan Data Mahasiswa</td>
               <td>2023-01-01</td>
-              <td>2023-01-05</td>
-              <td><span class="badge bg-warning">Pending</span></td>
+              <td><span class="badge bg-success">Approved</span></td>
+              <!-- New status -->
               <td>
-                <a href="/user/detail-permohonan.html" class="btn btn-primary"
+                <a
+                  href="/admin-ult/detail-permohonan.html"
+                  class="btn btn-primary"
                   ><i class="bi bi-file-earmark-text"></i
                 ></a>
-                <a href="/user/edit-permohonan.html" class="btn btn-warning"
+                <a
+                  href="/admin-ult/validasi-permohonan.html"
+                  class="btn btn-warning"
                   ><i class="bi bi-pen"></i
                 ></a>
                 <a
@@ -121,15 +124,20 @@
             </tr>
             <tr>
               <td>2</td>
+              <td>Jane Smith</td>
               <td>Pengajuan B</td>
               <td>2023-02-01</td>
-              <td>2023-02-05</td>
-              <td><span class="badge bg-secondary">Draft</span></td>
+              <td><span class="badge bg-warning">Pending</span></td>
+              <!-- New status -->
               <td>
-                <a href="/user/detail-permohonan.html" class="btn btn-primary"
+                <a
+                  href="/admin-ult/detail-permohonan.html"
+                  class="btn btn-primary"
                   ><i class="bi bi-file-earmark-text"></i
                 ></a>
-                <a href="/user/edit-permohonan.html" class="btn btn-warning"
+                <a
+                  href="/admin-ult/edit-permohonan.html"
+                  class="btn btn-warning"
                   ><i class="bi bi-pen"></i
                 ></a>
                 <a
@@ -145,10 +153,11 @@
           <tfoot>
             <tr>
               <th>No</th>
-              <th>Jenis Pengajuan</th>
+              <th>Nama</th>
+              <th>Jenis Permohonan</th>
               <th>Tgl Buat</th>
-              <th>Tgl Pengajuan</th>
               <th>Status</th>
+              <!-- New column -->
               <th>Aksi</th>
             </tr>
           </tfoot>
